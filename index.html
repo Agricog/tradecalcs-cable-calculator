@@ -7,10 +7,90 @@
     <meta name="description" content="Fast and accurate cable sizing calculator for UK electricians. BS 7671 18th Edition compliant. Calculate cable size and voltage drop instantly." />
     <meta name="keywords" content="cable calculator, cable sizing, voltage drop, BS 7671, electrician tools, UK wiring" />
     <title>Cable Size Calculator - BS 7671 Compliant</title>
+    <style>
+  .vip-banner {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: linear-gradient(135deg, #9333ea 0%, #7c3aed 50%, #2563eb 100%);
+    color: white;
+    padding: 12px 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  .vip-banner-content {
+    max-width: 896px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    text-align: center;
+  }
+  .vip-banner button {
+    text-decoration: underline;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: inherit;
+  }
+  .vip-banner button:hover {
+    color: #e9d5ff;
+  }
+  #vip-form-section {
+    margin-top: 32px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: none;
+    scroll-margin-top: 80px;
+  }
+  #vip-form-section.show {
+    display: block;
+  }
+</style>
+    
     <script type="module" crossorigin src="./assets/index-qg-EXhYi.js"></script>
     <link rel="stylesheet" crossorigin href="./assets/index-CHapFL-E.css">
   </head>
   <body>
+    <div class="vip-banner">
+      <div class="vip-banner-content">
+        <span style="font-size: 20px;">🚀</span>
+        <p style="margin: 0; font-size: 14px;">
+          Build Your Next Tool? 
+          <button onclick="document.getElementById('vip-form-section').classList.add('show'); document.getElementById('vip-form-section').scrollIntoView({behavior: 'smooth', block: 'start'});">
+            Join the VIP list
+          </button>
+          for early access to new calculators and tools.
+        </p>
+      </div>
+    </div>
+    
     <div id="root"></div>
+    
+    <div id="vip-form-section">
+      <div style="max-width: 672px; margin: 0 auto;">
+        <h2 style="font-size: 24px; font-weight: bold; color: #111827; margin-bottom: 8px;">
+          Join the VIP List
+        </h2>
+        <p style="color: #6b7280; margin-bottom: 24px;">
+          Get early access to new calculators and custom tools built for tradespeople.
+        </p>
+        <div style="background: white; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); overflow: hidden;">
+          <iframe
+            src="https://app.smartsuite.com/form/sba974gi/Zx9ZVTVrwE?header=false"
+            width="100%"
+            height="600px"
+            frameborder="0"
+            title="VIP List Signup Form"
+            style="width: 100%;">
+          </iframe>
+        </div>
+      </div>
+    </div>
+    
   </body>
 </html>

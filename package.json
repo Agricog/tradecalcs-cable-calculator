@@ -1,0 +1,12 @@
+{
+  "name": "tradecalcs-cable-calculator",
+  "version": "1.0.0",
+  "description": "Cable sizing calculator for UK electricians",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve -s . -p $PORT"
+  },
+  "keywords": ["calculator", "cable", "electrician"],
+  "author": "TradeCalcs",
+  "license": "MIT"
+}
